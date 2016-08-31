@@ -1,2 +1,5 @@
 # CG-314
-Amy Zhao CG 314 Homework
+How did the chicken cross the road? 
+//
+//
+The egg came first.
