@@ -1,0 +1,24 @@
+int circleWidth;
+int circleHeight;
+
+void setup() {
+  size(1280,720);
+  
+  noFill();
+  strokeWeight(1);
+  stroke(0);
+}
+void draw() {
+  
+  background(mouseX,mouseY,0);
+  
+
+  for(int y = 0; y<=height; y+=40){
+    for(int x = 0; x<+width; x+=40){ 
+      float r = random(1,800);
+      fill(mouseX, mouseY, r);
+      ellipse(r,100,mouseY,mouseX);
+  }
+  }}
+  
+  
