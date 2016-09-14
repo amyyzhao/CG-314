@@ -1,6 +1,6 @@
 ////making own photoshop
 
-//float theDistance;
+//float theDistance; //LINE STROKES
 
 //void setup() {
 //  size(500,500);
@@ -20,8 +20,8 @@
 
 
 
-//float x,y;
-//float easing = 10;
+//float x,y;  //FLUIDITY HATCHING TOOL
+//float easing = 10; //CHANGING EASE = LARGE HATCHING/ SMALL DOTS
 //void setup(){
 //  size(500,500);
 //}
@@ -52,7 +52,7 @@
 
 
 //}
-//void draw(){
+//void draw(){  //CONDITIONALS
 //  if (mousePressed==true){
 //    stroke(0,255,0);
 //    line(mouseX,mouseY,pmouseX,pmouseY);
@@ -65,7 +65,7 @@
 
 
 
-//void draw(){
+//void draw(){  //MORE CONDITIONALS
 //  if (mouseX >480){
 //    stroke (0,255,0);
 //  } else if (mouseX > 320) {
@@ -78,7 +78,7 @@
 
 
 
-//void setup(){
+//void setup(){  //HOVER BUTTONS
 //  size(1280,720);
 //}
 //void draw(){
@@ -88,3 +88,21 @@
 //    fill(0,255,0);
 //    rect(10,10,60,60);
 //}}
+
+
+////SPRAY TOOL
+
+//void setup() {
+//  size(640, 360);
+//  noStroke();
+//}
+
+//void draw() {
+//  float tempR = map(mouseX,1,width,1,255);
+//  float tempG = map(mouseY,1,height,1,255);
+  
+//  for (int i =0; i<4; i++){
+//    fill(tempR,tempG,random(1,255));
+//    ellipse(mouseX+random(-10,10),mouseY-random(-10,10),5,5);
+//  }
+//}
