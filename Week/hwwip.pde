@@ -3,6 +3,8 @@
 int a = 10; 
 int b = 10; 
 
+int tools = 0;
+
 
 float theDistance; //LINE STROKES
 float x,y;  //FLUIDITY HATCHING TOOL
@@ -46,37 +48,50 @@ void hatching(){
   }
 }
 
+void tool(){
+  if (tools==1){
+    spray();
+  }
+  else if (tools==2){
+    lines();
+  }
+  else if (tools==3){
+    hatching();
+  }}
+
 void butt1(){
   fill(255,0,0);
   rect(a,b,60,60);
-  if (mousePressed==true){
+  if (mousePressed){
     if(mouseX>10 && mouseX <70 && mouseY> 10 && mouseY<70){
       fill(0,255,0);
-      rect(a,b,60,60);}
-      spray();
+      rect(a,b,60,60);
+    }else if {
+      (tools = 1);
 
     }}
     
 void butt2(){
   fill(255,0,0);
   rect(a,b+100,60,60);
-  if (mousePressed==true){
+  if (mousePressed){
     if(mouseX>b+100 && mouseX <70 && mouseY> a && mouseY<70){
       fill(0,255,0);
       rect(a,b+100,60,60);}
-      lines();
-
+      tool();
+  }else if {(tools = 1);
     }}
 
 void butt3(){
   fill(255,0,0);
   rect(a,b+200,60,60);
-  if (mousePressed==true){
+  if (mousePressed){
     if(mouseX>b+200 && mouseX <70 && mouseY>a && mouseY<70){
       fill(0,255,0);
       rect(a,b+200,60,60);}
-      hatching();
-
+      tool();
+  }else if {
+    (tools = 1);
     }}
     
     
@@ -87,4 +102,3 @@ void draw(){
   butt3();
 
 }
-
