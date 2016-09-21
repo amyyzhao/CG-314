@@ -1,0 +1,36 @@
+float tempAngle =  radians(45); //constant rotation
+
+void setup() {
+  size (640, 480);
+  background(255);
+}
+
+void draw() {
+  //can ommit
+  translate(mouseX, mouseY);
+  rotate(radians(tempAngle));
+  fill(255, 0, 0);
+  rect(0, 0, 10, 10);
+  tempAngle += random(mouseX, mouseY);
+  scale(random(1, 2));
+  rect(0, 0, random(1, 50), random(1, 50));
+
+  //PUSH POP
+  pushMatrix();
+  float tempAngle1 = map (mouseX, 0, height, 0, 360);  //mirrors
+  translate(mouseY, mouseX);
+  rotate(radians(tempAngle1));
+  fill(random(1, 255), 0, 0);
+  triangle(-25, -10, -50, -20, -30, -30);
+  popMatrix(); 
+
+  pushMatrix();
+  float tempAngle2 = map (mouseX, 0, width, 0, 360);
+  translate(mouseX, mouseY);
+  rotate(radians(tempAngle2));
+  fill(0, random(1, 255), 0);
+  rect(-25, -25, 10, 10);
+  fill(0, 0, random(1, 255));
+  ellipse(100, 100, 10, 10);
+  popMatrix();
+}
