@@ -1,0 +1,18 @@
+int x, y;
+int size = 50;
+int g =255;
+
+void setup(){
+  size(640,360);
+  x = width/2;
+  y = height/2;
+}
+void draw(){
+  drawFace(x,y,size,g);
+  drawFace(width/4,y,size+40,200);
+  drawFace(height/10,y,size+100,20);
+}
+void drawFace(int tempX,int tempY,int tempSize, int green){
+  fill(255,green,0);
+  ellipse(tempX,tempY,tempSize,tempSize);
+}
