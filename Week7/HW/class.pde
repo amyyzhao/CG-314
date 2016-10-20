@@ -20,8 +20,8 @@ void setup() {
 void draw() {
   background(0);
   if (keyPressed) {
-    poo1.move();
-    poo2.move();
+    poo1.jump();
+    poo2.jump();
   } else {
     poo1.hover();
     poo2.hover();
