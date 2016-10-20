@@ -1,5 +1,5 @@
-Rocketship ship;
-Rocketship ship2;
+poop poo1;
+poop poo2;
 
 float x;
 float y;
@@ -8,8 +8,8 @@ color theColor = color(255, random(1, 255), 100);
 
 void setup() {
   size(1280, 720);
-  ship = new Rocketship(width/2, height/2, 50, color(135, 140, 180));
-  ship2 = new Rocketship(width/6, height/1.3, 70, color(100, 100, 100));
+  poo1 = new poop(width/2, height/2, 50, color(135, 140, 180));
+  poo2 = new poop(width/6, height/1.3, 70, color(100, 100, 100));
   x = width/2;
   y = height/2;
   size = 60;
@@ -20,13 +20,13 @@ void setup() {
 void draw() {
   background(0);
   if (keyPressed) {
-    ship.move();
-    ship2.move();
+    poo1.move();
+    poo2.move();
   } else {
-    ship.hover();
-    ship2.hover();
+    poo1.hover();
+    poo2.hover();
   }
-  ship.display();
-  ship2.display();
+  poo1.display();
+  poo2.display();
 }
 
