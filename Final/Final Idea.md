@@ -28,17 +28,3 @@ IDEAS
 4)Which is the right key? (You click on door and it'll open) fail and it rains blood and you drown to death (Array/gradient)
 
 
-Fonts will be written in :
-
-String s = "hello world!";
-println(s.length());
-float xPos = 10;
-size(400, 400);
-background(0);
-for (int i = 0; i<s.length(); i++) {
-  char c = s.charAt(i);
-  fill(random(100, 255));
-  textSize(random(12, 48));
-  text(c, xPos, height/2);
-  xPos += textWidth(c);
-}
