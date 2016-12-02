@@ -25,7 +25,7 @@ IDEAS
   Webcam starts, pixels cover up screen. 
   Click on the key before pixels covers up face (time limit) if not, GameOver.
 
-4)Which is the right key? (You click on door and it'll open) fail and it rains blood and you drown to death (Array/gradient)
+3)Which is the right key? (You click on door and it'll open) fail and it rains blood and you drown to death (Array/gradient)
 
 http://code.compartmental.net/tools/minim/
 
