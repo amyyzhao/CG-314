@@ -1,4 +1,4 @@
-Escape the Room Visual Novel
+Visual Novel
 
 IDEAS
   -Music
